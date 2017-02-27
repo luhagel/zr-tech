@@ -1,15 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router'
+import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
-const TopNav = (props) => {
-  return (
-    <nav>
-      <Link to="/">{props.branding}</Link>
-      {props.links.map((link, index) => {
-        return <Link to={link.path} key={index}>{link.name}</Link>
-      })}
-    </nav>
-  )
-}
+const TopNav = props => (
+  <nav>
+    <Link to="/">{props.branding}</Link>
+    {props.links.map((link, index) => {
+      const key = `topnav-${index}`;
+      return <Link to={link.path} key={key}>{link.name}</Link>;
+    })}
+  </nav>
+  );
 
-export default TopNav
+TopNav.propTypes = {
+  branding: PropTypes.string.isRequired,
+  links: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+export default TopNav;
