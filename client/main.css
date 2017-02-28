@@ -1,6 +1,29 @@
+html {
+  background-color: #012761;
+  background-image: url('/bg.jpg');
+  background-size: cover;
+}
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 10px;
+  margin: 0;
+  text-align: center;
 }
 nav a {
   margin: 10px;
+  color: #fff;
+}
+
+#layout-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 50px;
+  width: 90vw;
+  margin: 40px auto;
 }

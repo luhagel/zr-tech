@@ -8,9 +8,11 @@ const MainLayout = ({ children }) => {
                  { name: 'Forums', path: '/forums' }];
 
   return (
-    <div id="layout-wrapper">
+    <div>
       <TopNav links={links} branding="ZR Tech" />
-      {children}
+      <div id="layout-wrapper">
+        {children}
+      </div>
     </div>
   );
 };
