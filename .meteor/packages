@@ -21,3 +21,4 @@ mdg:validated-method
 accounts-base
 std:accounts-ui
 accounts-password
+aldeed:simple-schema

@@ -19,9 +19,7 @@ const MainLayout = ({ children }) => {
 };
 
 MainLayout.propTypes = {
-  /* eslint-disable */
-  children: PropTypes.object.isRequired,
-  /* eslint-enable */
+  children: PropTypes.node.isRequired,
 };
 
 export default MainLayout;
