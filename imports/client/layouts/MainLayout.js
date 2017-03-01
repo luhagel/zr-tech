@@ -5,7 +5,8 @@ import TopNav from '../components/TopNav';
 const MainLayout = ({ children }) => {
   const links = [{ name: 'Home', path: '/' },
                  { name: 'Chat', path: '/chat' },
-                 { name: 'Forums', path: '/forums' }];
+                 { name: 'Forums', path: '/forums' },
+                 { name: 'Login', path: '/signin' }];
 
   return (
     <div>
