@@ -6,7 +6,7 @@ Accounts.config({
 });
 
 Accounts.ui.config({
-  passwordSignupFields: 'EMAIL_ONLY',
+  passwordSignupFields: 'USERNAME_AND_EMAIL',
   loginPath: '/login',
   signUpPath: '/signup',
   resetPasswordPath: '/reset-password',
