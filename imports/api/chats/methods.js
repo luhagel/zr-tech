@@ -16,3 +16,19 @@ export const getChat = new ValidatedMethod({
     });
   },
 });
+
+export const addMessageToChat = new ValidatedMethod({
+  // TODO: Do smth in here
+  name: 'Chats.addMessageToChat',
+  validate: new SimpleSchema({
+    chatId: String,
+    message: String,
+  }).validator(),
+  run({ chatId, message }) {
+    const chat = Chats.findOne({
+      _id: chatId,
+    });
+
+    chat.messages.append(message);
+  },
+});

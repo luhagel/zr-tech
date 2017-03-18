@@ -26,6 +26,7 @@ nav a {
   padding: 50px;
   width: 90vw;
   margin: 40px auto;
+  border-radius: 3px;
 }
 
 .home-wrapper {
