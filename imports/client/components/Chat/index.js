@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ChatWindow from './ChatWindow';
+import ChatBox from './ChatBox';
 
 class Chat extends React.Component {
   render() {
@@ -14,7 +15,10 @@ class Chat extends React.Component {
       { message: 'test that' },
     ];
     return (
-      <ChatWindow title="Test Chat" messages={testMessages} />
+      <div className="chat-wrapper">
+        <ChatWindow title="Test Chat" messages={testMessages} />
+        <ChatBox />
+      </div>
     );
   }
 }

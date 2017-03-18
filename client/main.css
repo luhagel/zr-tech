@@ -27,3 +27,15 @@ nav a {
   width: 90vw;
   margin: 40px auto;
 }
+
+.home-wrapper {
+  text-align: center;
+}
+
+.home-wrapper>ul {
+  list-style: none;
+}
+
+.home-wrapper>ul>li {
+  margin-top: 16px;
+}
